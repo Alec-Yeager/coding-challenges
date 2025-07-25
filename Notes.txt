@@ -1,0 +1,13 @@
+Things I've learned:
+
+My autoformatter is conform, which routes to prettier.
+The config for it is .clang-format and has decent docs. LLVM is nice.
+using cmake is necessary for getting the right c++ version. Set the cmake up, and make sure to have:
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON) 
+in there, so that the compile_commands.json gets made, placed in the build folder.
+You can have defines by running stuff like 'cmake --DTARGET=12' to set a variable called TARGET.
+
+c++20 has this thing called spans, which can be constructed from the v.begin(), v.end() or any other it pointer set. Kinda nice.
+span<vecT> vecSpan(vec.begin() + 1, vec.end())
+for example is like vecSpan = vec[2:] in python.
+
