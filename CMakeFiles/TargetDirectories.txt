@@ -1,4 +1,0 @@
-/home/Vozrazhat/Projects/coding-challenges/CMakeFiles/12.dir
-/home/Vozrazhat/Projects/coding-challenges/CMakeFiles/run.dir
-/home/Vozrazhat/Projects/coding-challenges/CMakeFiles/edit_cache.dir
-/home/Vozrazhat/Projects/coding-challenges/CMakeFiles/rebuild_cache.dir

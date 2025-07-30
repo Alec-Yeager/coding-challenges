@@ -2,7 +2,11 @@ cmake_minimum_required(VERSION 3.16)
 project(Coding-Challenge CXX)
 
 set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -O2")
+if (MSVC)
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /W4 /O2")
+else()
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -O2")
+endif()
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Require TARGET to be passed in via command line
