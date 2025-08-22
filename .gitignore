@@ -2,3 +2,5 @@
 .vscode/
 build/*
 Coding\ Challenges.code-workspace
+.chache/
+.cache/**

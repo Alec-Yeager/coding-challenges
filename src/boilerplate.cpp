@@ -1,28 +1,48 @@
+#include "../include/utils.hpp"
 #include <iostream>
-#include <vector>
 #include <sstream>
 #include <string>
-#include "../include/utils.hpp"
+#include <vector>
 using namespace std;
 
-class Solution
-{
-};
+class Solution {};
 
-int main()
-{
+int main() {
     Solution sol;
     string line;
-    while (getline(cin, line))
-    {
+    while (getline(cin, line)) {
         stringstream ss(line);
         int x;
         vector<int> input;
-        while (ss >> x)
-        {
+        while (ss >> x) {
             input.push_back(x);
         }
 
         printVector(input);
     }
+    return 0;
+}
+
+int main() {
+    Solution sol;
+    string line;
+    while (getline(cin, line)) {
+        print(line);
+    }
+    return 0;
+}
+
+int main() {
+    Solution sol;
+    string line;
+    while (getline(cin, line)) {
+        stringstream ss(line);
+        string s;
+        vector<string> input;
+        while (ss >> s) {
+            input.push_back(s);
+        }
+        printVector(input);
+    }
+    return 0;
 }

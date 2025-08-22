@@ -11,3 +11,17 @@ c++20 has this thing called spans, which can be constructed from the v.begin(), 
 span<vecT> vecSpan(vec.begin() + 1, vec.end())
 for example is like vecSpan = vec[2:] in python.
 
+stringstream is really nice.
+
+    stringstream ss(s);
+    string word;
+    vector<string> words;
+
+    while (ss >> word) {
+        words.push_back(word);
+    }
+
+you can just construct it from a string and it'll delete spaces for you like this. you can also feed it into ints, which is dope.
+seems to be faster in general to use standard iterators than the fancy shit.
+
+just take the fucking normal solution. Don't try hyper optimizing. Wastes time on edge cases sometimes if it's not obvious.
