@@ -1,6 +1,6 @@
 .vscode/*
 .vscode/
 build/*
-Coding\ Challenges.code-workspace
+*.code-workspace
 .chache/
 .cache/**
